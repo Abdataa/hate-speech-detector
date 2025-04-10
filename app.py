@@ -6,7 +6,8 @@ import re
 model = joblib.load("hate_speech_model.pkl")
 vectorizer = joblib.load("vectorizer.pkl")
 
-# Label mapping 
+# Label mapping
+label_map={
     0: "Hate Speech",
     1: "Offensive Language",
     2: "Neither"
